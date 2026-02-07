@@ -1,5 +1,5 @@
 grosssalary = int(input("Enter your salary here: "))
-if grosssalary == 0 and grosssalary > 5999 :
+if grosssalary >= 0 and grosssalary > 5999 :
     print("150.00")
 elif grosssalary >= 6000 and grosssalary <= 7999 :
     print("300.00")
@@ -17,6 +17,8 @@ elif grosssalary >= 30000 and grosssalary <= 49999 :
     print("1000.00")
 elif grosssalary >= 50000 and grosssalary <= 99999 :
     print("1500.00")
+elif grosssalary < 0 :
+    print("invalid")    
 else :
     print("2000.00")
                                  
